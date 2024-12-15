@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaval in C#</title>
+    <!-- Add Prism CSS and Theme -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <style>
+        :root {
+            --bg-color-dark: #212121;
+            --text-color-dark: #dcdcdc;
+            --bg-color-light: #f9f9f9;
+            --text-color-light: #333;
+            --highlight-color: #ffa500;
+            --bg-color: #212121;
+            --text-color: #dcdcdc;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--bg-color);
+            text-align: center;
+            padding: 20px;
+            height: auto;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+        }
+        header img {
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+            transition: filter 0.3s ease;
+        }
+        header img:hover {
+            filter: brightness(1.5);
+        }
+        .header-button {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+            transition: color 0.3s ease;
+        }
+        .header-button:hover {
+            color: #777;
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+        .divider {
+            margin: 20px auto;
+            border-top: 1px solid #777;
+            width: 100%;
+            max-width: 100%;
+        }
+        h1, h2 {
+            text-align: left;
+        }
+        pre {
+            border-radius: 6px;
+            padding: 1em;
+            margin: 1em 0;
+            overflow: auto;
+            background-color: #f0f0f0;
+        }
+        code {
+            font-family: 'Consolas', 'Monaco', 'Andale Mono', monospace;
+            color: grey;
+        }
+        a {
+            color: var(--highlight-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ffcc00;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #ff8c00;
+        }
+        .code-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .copy-button {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .copy-button:hover {
+            color: #777;
+        }
+        .blog-content {
+            margin: 20px;
+        }
+
+        /* Add this media query below */
+        @media (max-width: 600px) {
+            .theme-toggle {
+                top: 10px;
+                right: 10px;
+                font-size: 14px;
+            }
+
+            header {
+                padding: 10px;
+            }
+
+            .header-button {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+    <header>
+        <a href="https://frankfaruksampling.site" target="_blank">
+            <img id="logo" src="https://raw.githubusercontent.com/frankiefaruk/logo/refs/heads/main/frank_faruk_logo_white.svg" alt="Frank Faruk Logo">
+        </a>
+        <button class="header-button" onclick="window.location.href='https://frankfaruksampling.site'">FRANK FARUK SAMPLING</button>
+        <hr class="divider">
+
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <img id="theme-icon" src="https://img.icons8.com/ios-glyphs/30/dcdcdc/moon-symbol.png" alt="Dark Mode Icon" style="width: 20px; height: 20px; vertical-align: middle;">
+        </button>
+    </header>
+
+  <body>
+
+<h1>Kaval in C#</h1>
+<h2>A Sample library for Decent Sampler</h2>
+
+<h2>Exploring the Soulful Sounds of the Kaval: A Deep Dive</h2>
+
+<p>The kaval, a traditional end-blown flute originating from the Balkans and parts of the Middle East, holds a significant place in the folk music traditions of Bulgaria, Turkey, and Greece. This simple yet expressive instrument, typically made of wood, produces a rich, warm tone capable of conveying a wide range of emotions. Let's delve into the characteristics, cultural significance, and a new virtual instrument offering of this captivating instrument.</p>
+
+<div style="padding: 20px 0; text-align: center;">
+    <img src="Images/kaval_frankfaruksampling_1.jpg" alt="Kaval Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+<h2>Characteristics of the Kaval</h2>
+
+<h3>Structure</h3>
+<p>The kaval typically measures between 60 to 80 centimeters in length and features six finger holes on the front and one thumb hole on the back. Its conical shape contributes to its distinctive sound.</p>
+
+<h3>Sound</h3>
+<p>Known for its rich and warm tone, the kaval is highly expressive and suitable for both solo performances and ensemble accompaniment.</p>
+
+<h2>Playing Technique</h2>
+<p>Players produce different pitches by blowing into one end of the instrument and covering/uncovering the finger holes. The kaval's versatility allows for the performance of intricate melodies typical of Balkan music.</p>
+
+<h2>Cultural Significance</h2>
+<p>The kaval is deeply intertwined with the cultural heritage of the regions where it is played. Often featured in celebrations, rituals, and storytelling, it serves as a symbol of cultural identity for many communities. Beyond its traditional use, the kaval has also found its way into contemporary music genres and fusion styles.</p>
+
+<h2>The Kaval for Decent Sampler: Bringing Eastern Magic to Your Music</h2>
+<p>For musicians seeking to incorporate the unique sound of the kaval into their productions, a new virtual instrument for Decent Sampler offers an authentic and versatile experience. This library, created by Frank Faruk Sampling, captures the soulful essence of the kaval with a focus on authentic Turkish Makam scales.</p>
+
+<h3>Key Features:</h3>
+<ul>
+    <li>Authentic Makams: Experience genuine Ottoman music with Uşşak, Rast, Suzinak, and Hicaz scales.</li>
+    <li>Natural Performance: Enjoy a realistic playing feel with 3 Round Robin recordings.</li>
+    <li>Intuitive Controls: Easily adjust reverb, delay, and tone.</li>
+    <li>Genre-Versatility: Ideal for soundtracks, documentaries, video games, and more.</li>
+    <li>Session Player Option: Book session musicians directly through the website for a personalized touch.</li>
+</ul>
+
+<div style="padding: 40px 0; text-align: center;">
+    <img src="Images/kaval_frankfaruksampling_7.jpg" alt="Kaval Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+<h2>Understanding Turkish Makam Scales on a MIDI Keyboard</h2>
+<p>The library offers both standard and microtonal tunings to accurately represent the nuances of Turkish Makam scales. These scales, complex and varied, are presented as presets for ease of use.</p>
+
+<h3>Presets and Features:</h3>
+
+<h4>Standard Tuning Presets:</h4>
+<ul>
+    <li>Chromatic Tuning (C#) with transposition functionality.</li>
+    <li>Double Pitch (DP) for adding an octave below.</li>
+    <li>Round Robins (RR) for natural variations.</li>
+</ul>
+
+<h4>Standard & Microtonal Tuning Presets:</h4>
+<ul>
+    <li>Round Robins.</li>
+    <li>Keyswitches for articulations: Sustain (C2), Staccato (D2), Synthetic Tremolo (E2).</li>
+</ul>
+
+<h3>List of Presets:</h3>
+<div style="padding: 40px 0; text-align: center;">
+    <img src="Images/kaval_frankfaruksampling_3.jpeg" alt="Kaval Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+<ol>
+    <li>01-C#_Kaval_Standard_RR</li>
+    <li>02-C#_Kaval_Standard_DP</li>
+    <li>03-C#_Kaval_Ussak_DP</li>
+    <li>04-C#_Kaval_Usak_RR</li>
+    <li>05-C#_Kaval_Rast_DP</li>
+    <li>06-C#_Kaval_Rast_RR</li>
+    <li>07-C#_Suzinak_DP</li>
+    <li>08-C#_Suzinak_RR</li>
+    <li>09-C#_Zirgüleli_Hicaz_DP</li>
+    <li>10-C#_Zirgüleli_Hicaz_RR</li>
+</ol>
+
+<h3>Explanation of Each Makam in C# (with Microtonal Adjustments):</h3>
+<p>The documentation provides visual representations of each Makam (Üssşak, Rast, Suzïnak, and Zirgüleli Hicaz) on a MIDI keyboard, highlighting the notes included in each scale and any necessary microtonal adjustments.</p>
+
+<h3>Links:</h3>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Demo Song</a></li>
+    <li><a href="#">Keyswitches & Presets</a></li>
+    <li><a href="#">Sound Cloud</a></li>
+    <li><a href="Images/about_kaval.pdf" target="_blank">Read Me</a></li>
+</ul>
+
+</body>
+
+  <!-- Footer Section -->
+    <hr class="divider">
+    <footer style="text-align: center; margin: 20px 0; color: var(--text-color); font-size: 14px;">
+        Design by <a href="https://frankfaruksampling.site" target="_blank">Frank Faruk Sampling</a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script>
+        function copyToClipboard(selector) {
+            const codeBlock = document.querySelector(selector);
+            const textArea = document.createElement('textarea');
+            textArea.value = codeBlock.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                console.error('Failed to copy text', err);
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function toggleTheme() {
+            const root = document.documentElement;
+            const themeToggle = document.querySelector('.theme-toggle');
+            const logo = document.getElementById('logo');
+            const themeIcon = document.getElementById('theme-icon');
+            const isDarkMode = getComputedStyle(root).getPropertyValue('--bg-color').trim() === '#212121';
+
+            if (isDarkMode) {
+                // Switch to light mode
+                root.style.setProperty('--bg-color', '#f9f9f9');
+                root.style.setProperty('--text-color', '#333');
+                themeIcon.src = 'https://img.icons8.com/ios-glyphs/30/000000/sun--v1.png'; // Light mode icon
+                themeIcon.alt = 'Light Mode Icon';
+                logo.src = 'https://raw.githubusercontent.com/frankiefaruk/logo/refs/heads/main/frank_faruk_logo_grey.svg';
+            } else {
+                // Switch to dark mode
+                root.style.setProperty('--bg-color', '#212121');
+                root.style.setProperty('--text-color', '#dcdcdc');
+                themeIcon.src = 'https://img.icons8.com/ios-glyphs/30/dcdcdc/moon-symbol.png'; // Dark mode icon
+                themeIcon.alt = 'Dark Mode Icon';
+                logo.src = 'https://raw.githubusercontent.com/frankiefaruk/logo/refs/heads/main/frank_faruk_logo_white.svg';
+            }
+        }
+    </script>
+</body>
+</html>
